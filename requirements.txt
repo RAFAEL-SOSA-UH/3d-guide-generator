@@ -1,0 +1,5 @@
+pillow>=10.1
+# only for --call:
+anthropic>=0.40
+# only for --build without Blender installed (Blender as a Python module):
+# bpy==5.1.1

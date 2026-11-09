@@ -1,0 +1,11 @@
+{
+  "_comment": "AI models shown in the wizard. Edit freely. image_rule: claude (28 px patches, capped), openai_tiles (85 + 170 per 512 px tile after fitting to 2048 and 768), gemini_tiles (258 per 768 px tile). guide_out: typical output tokens of a guide at normal detail. direct: true = guidegen.py can call it with an API key; false = copy and paste the package into its chat. verified: false = the numbers are a rough guess, check the provider's docs.",
+  "models": [
+    {"name": "Claude Opus 5.5", "id": "claude-opus-5-5", "provider": "anthropic", "image_rule": "claude", "guide_out": 12000, "build_out": 6000, "direct": true, "verified": true},
+    {"name": "Claude Sonnet 5.5", "id": "claude-sonnet-5-5", "provider": "anthropic", "image_rule": "claude", "guide_out": 10000, "build_out": 5000, "direct": true, "verified": true},
+    {"name": "Claude Haiku 5.5", "id": "claude-haiku-5-5", "provider": "anthropic", "image_rule": "claude", "guide_out": 8000, "build_out": 4000, "direct": true, "verified": true},
+    {"name": "OpenAI GPT-5.2-Codex", "id": "gpt-5.2-codex", "provider": "openai", "image_rule": "openai_tiles", "guide_out": 10000, "build_out": 5000, "direct": false, "verified": false},
+    {"name": "Google Gemini", "id": "gemini", "provider": "google", "image_rule": "gemini_tiles", "guide_out": 10000, "build_out": 5000, "direct": false, "verified": false},
+    {"name": "Other AI (copy and paste)", "id": "other", "provider": "other", "image_rule": "claude", "guide_out": 10000, "build_out": 5000, "direct": false, "verified": false}
+  ]
+}

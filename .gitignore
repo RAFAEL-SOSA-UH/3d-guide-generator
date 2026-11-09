@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generator and keyframes tool: inputs and results stay on your computer
+output/
+tools/keyframes/videos/*
+!tools/keyframes/videos/.gitkeep
+tools/keyframes/output/
+
+# Vault: your sources, guides and files stay on your computer
+vault-template/ai/Sources/*
+!vault-template/ai/Sources/README.md
+vault-template/guides/**/*.md
+vault-template/guides/Attachments/*
+!vault-template/guides/README.md
+!vault-template/guides/**/.gitkeep
+vault-template/resources/**/*
+!vault-template/resources/README.md
+!vault-template/resources/**/
+!vault-template/resources/**/.gitkeep
+
+# Obsidian workspace state
+vault-template/.obsidian/workspace*.json
+vault-template/.obsidian/cache
+
+# Blender backups and OS files
+*.blend1
+*.blend2
+Thumbs.db
+desktop.ini
+.DS_Store
